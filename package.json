@@ -1,0 +1,23 @@
+{
+  "name": "cocotte-device",
+  "description": "デバイス情報をsessionに保存",
+  "homepage": "https://github.com/yukik",
+  "keywords": [
+    "tools"
+  ],
+  "author": "Yuki Kurata <yuki.kurata@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yukik/cocotte-device.git"
+  },
+  "main": "device.js",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
