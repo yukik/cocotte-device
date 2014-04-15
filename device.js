@@ -6,19 +6,28 @@
  * https://github.com/rguerreiro/express-device
  */
 
+'use strict';
+
 /*
  * デバイス情報の取得を行いセッションに設定
  * 既に設定されている場合は処理はスキップ
+ *
+ * tv     : テレビ
+ * tablet : タブレット
+ * phone  : スマートフォン
+ * desktop: パソコン
+ * bot    : ボット
+ * unknown: 不明
  */
 module.exports = exports = function*(next) {
-	'use strict';
+
 
 	if (this.session.device) {
 		return yield next;
 	}
 
-	var ua = this.request.header['user-agent']
-		, device;
+	var ua = this.request.header['user-agent'];
+	var device;
 
 	if (!ua || ua === '') {
 		// No user agent.
@@ -76,3 +85,4 @@ module.exports = exports = function*(next) {
 
 	return yield next;
 };
+

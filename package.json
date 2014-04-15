@@ -3,7 +3,10 @@
   "description": "デバイス情報をsessionに保存",
   "homepage": "https://github.com/yukik",
   "keywords": [
-    "cocotte"
+    "koa",
+    "cocotte",
+    "device",
+    "user-agent"
   ],
   "author": "Yuki Kurata <yuki.kurata@gmail.com>",
   "repository": {
@@ -11,7 +14,7 @@
     "url": "git://github.com/yukik/cocotte-device.git"
   },
   "main": "device.js",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "test": "node ./test/test.js"
   },
