@@ -1,18 +1,19 @@
 'use strict';
 
-var koa = require('koa')
-  , app = koa()
-  , session = require('koa-sess')
-  , device = require('cocotte-device');
+var koa = require('koa');
+var app = koa();
+var session = require('koa-sess');
+var device = require('cocotte-device');
 
 app.use(session());
 app.use(device);
 
 app.use(function*(next){
 
-	console.log(this.session.device);
+  console.log(this.session.device);
 
-	yield next;
+  yield next;
+
 });
 
 app.listen(3000);

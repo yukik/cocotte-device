@@ -14,7 +14,7 @@
     "url": "git://github.com/yukik/cocotte-device.git"
   },
   "main": "device.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "test": "node ./test/test.js"
   },
